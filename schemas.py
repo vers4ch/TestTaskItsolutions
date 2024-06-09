@@ -1,6 +1,6 @@
 from pydantic import BaseModel
 
-# Existing Ad schema
+# схема объявлений
 class Ad(BaseModel):
     id: int
     title: str
@@ -12,12 +12,12 @@ class Ad(BaseModel):
     class Config:
         orm_mode = True
 
-# New User schema for registration
+# схема для создания аккаунта
 class UserCreate(BaseModel):
     username: str
     password: str
 
-# New User schema for response
+# схема для ответа создания аккаунта
 class User(BaseModel):
     id: int
     username: str
@@ -25,7 +25,7 @@ class User(BaseModel):
     class Config:
         orm_mode = True
 
-# Token schema
+# схема для ответа создания токена
 class Token(BaseModel):
     access_token: str
     token_type: str
