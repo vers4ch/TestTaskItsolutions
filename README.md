@@ -1,6 +1,6 @@
 ### Инструкция по запуску проекта:
-1. `git clone TestTaskItsolutions`
-2. `cd api_app`
+1. `git clone https://github.com/vers4ch/TestTaskItsolutions.git`
+2. `cd TestTaskItsolutions`
 3. `sudo docker-compose build`
 4. `docker-compose up -d`
 
